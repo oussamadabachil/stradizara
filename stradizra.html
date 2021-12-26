@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+               
+  <div class="center">
+    <div></div>
+  </div>
+            </li>
+
+
+
+            <li class="logo">STRADIZRA</li>
+            <li class="icone_cart"><img src="./icpne_cart.png" alt=""panier></li>
+
+        </ul>
+    </header>
+    <div class="sub_header">
+        <input type="text" name="" placeholder="Effectuez votre recherche">
+    <img src="./loupe_ico_tr.png" alt="loupe icone"></div>
+    <main>
+        <div class="grid-div">
+            <div class="a"><h1>
+                HOMME
+            </h1></div>
+            <div class="b">
+                <h1>FEMME</h1>
+            </div>
+        </div>
+   
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+
+<style>
+main>div{
+    
+}
+
+.grid-div>div>h1{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    width: 50%;
+    text-align: center;
+}
+
+.a{
+background-image: url(./photoh.png);
+background-size: cover;
+background-position: center bottom;
+
+}
+
+.b{
+    background-image: url(./photof.jpeg);
+background-size: cover;
+background-position: center bottom;}
+
+.grid-div{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+.sub_header>img{
+    width: 1.5rem;
+    position: absolute;
+    top:.6rem;
+    right: .5rem;
+
+}
+    .sub_header>input{
+        padding-left: 2rem;
+        width: 100%;
+        height: 100%;
+        border:none;
+    }
+.sub_header{
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 4.5rem;
+    background-color: white;
+}
+    main{
+        height: 100vh;
+        background-color: rgb(131, 224, 173);
+    }
+    header>ul>li>img{
+        width: 2.5rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .logo{
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    }
+    header>ul{
+        text-decoration: none;
+        list-style: none;
+        margin:1rem auto;
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+    }
+    header{
+        position: fixed;
+        top: 0rem;
+        width: 100%;
+        height: 4.5rem;
+        background-color: rgb(160, 187, 192);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .center {
+        display: block;
+        margin: 0 auto;
+  width: 50px;
+}
+
+.center:before,
+.center:after,
+.center div {
+  background: rgb(0, 0, 0);
+  content: "";
+  display: block;
+  height: 2px;
+  border-radius: 3px;
+  margin: 8px 0;
+  transition: 0.5s;
+}
+.center:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+.center:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+.center:hover div {
+  transform: scale(0);
+}
+
+
+</style>
