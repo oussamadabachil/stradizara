@@ -39,7 +39,19 @@ button_camera.addEventListener("click",()=>{
     div_show_scan.classList.add("popup_scanner_show")
     navigator.mediaDevices.getUserMedia({
         audio:false,
-        video: true}).then(stream => {
+  video: {
+    width: {
+      min: 1280,
+      ideal: 1920,
+      max: 2560,
+    },
+    height: {
+      min: 720,
+      ideal: 1080,
+      max: 1440
+    },
+    facingMode: 'user'
+  }}).then(stream => {
                 video_panel.srcObject = stream;
         }).catch(console.error)
         splash_js.style.display="block"
